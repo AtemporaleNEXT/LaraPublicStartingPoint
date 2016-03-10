@@ -1,0 +1,26 @@
+// Calls Less files to use external mixin whitout print
+// * * * * * *
+@import (reference) "../../bower/atemporaleNEXTbower/less/grid_system12.less";
+@import (reference) "../../bower/atemporaleNEXTbower/less/material_design_color_palette.less";
+@import (reference) "../../bower/atemporaleNEXTbower/less/mixin_css3.less";
+@import (reference) "../../bower/atemporaleNEXTbower/less/mixin_posizione.less";
+@import (reference) "../../bower/atemporaleNEXTbower/less/mixin_testo.less";
+
+// Prints general default style
+// * * * * * *
+@import  "../../bower/atemporaleNEXTbower/less/start.less";
+
+// Prints general information:
+// * * * * * * font e icone
+@import "../../bower/_theme_assets/css/icons-fonts.less";
+// * * * * * * plugin template
+@import "../../bower/bootstrap/css/bootstrap.less";
+// * * * * * *  template
+@import "../components/layout.less";
+
+// Prints specif stile for this page
+// * * * * * *
+
+h1{
+  color: #333;
+}

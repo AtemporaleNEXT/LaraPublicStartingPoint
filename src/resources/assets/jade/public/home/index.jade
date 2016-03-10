@@ -1,0 +1,33 @@
+// allows to working whit blade declarations
+include ./../../template/mixin.jade
+
+// blade function: @extend()
++extends('template/index')
+
+
+
+
+//  Metatags and style var
++section('Title')
+    title Title page
+
++section('MetaDescription')
+    meta(name="description", content="aaa")/
+
++section('MetaKeywords')
+    meta(name="keywords", content="aaa, aaa, aaa")/
+
++section('cssPagina')
+    link(rel="stylesheet", href!="{{ asset('css/home.css') }}", type="text/css")/
+
+
+
+//  Body content
++section('content')
+    +include('public/home/_partial')
+
+
+
+//  Script
++section('jsPagina')
+    script(src!="{{ asset('js/home.min.js')}}", type="text/javascript")
